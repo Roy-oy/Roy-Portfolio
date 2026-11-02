@@ -121,12 +121,8 @@ export default function Hero() {
               className="pointer-events-none absolute z-20"
               style={{ inset, transformOrigin: "50% 50%" }}
               initial={false}
-              animate={{ rotate: shouldReduceMotion ? start : [start, start + 360] }}
-              transition={
-                shouldReduceMotion
-                  ? undefined
-                  : { duration, repeat: Infinity, ease: "linear" }
-              }
+              animate={{ rotate: [start, start + 360] }}
+              transition={{ duration, repeat: Infinity, ease: "linear" }}
             >
               <span className="absolute left-1/2 top-0 -translate-x-1/2 text-[var(--timer)] drop-shadow-[0_0_8px_rgba(0,229,255,0.8)]">
                 <Icon size={size} fill={index === 0 ? "rgba(0,229,255,0.16)" : "currentColor"} />
