@@ -56,11 +56,8 @@ body {
 }
 
 @keyframes star-orbit {
-  from { transform: rotate(var(--orbit-start)); }
-  to { transform: rotate(calc(var(--orbit-start) + 360deg)); }
-}
-.star-orbit {
-  animation: star-orbit var(--orbit-duration) linear infinite;
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 /* Cincin cahaya berputar di sekitar foto */

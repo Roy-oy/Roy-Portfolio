@@ -123,8 +123,8 @@ export default function Hero() {
               style={{
                 inset,
                 transformOrigin: "50% 50%",
-                "--orbit-start": `${start}deg`,
-                "--orbit-duration": `${duration}s`,
+                animation: `star-orbit ${duration}s linear infinite`,
+                animationDelay: `${-(start / 360) * duration}s`,
               } as CSSProperties}
             >
               <span className="absolute left-1/2 top-0 -translate-x-1/2 text-[var(--timer)] drop-shadow-[0_0_8px_rgba(0,229,255,0.8)]">
