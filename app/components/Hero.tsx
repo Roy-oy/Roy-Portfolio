@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import type { CSSProperties } from "react";
 import {
   motion,
   useMotionValue,
@@ -115,19 +116,21 @@ export default function Hero() {
             { Icon: Star, inset: "-19%", start: 125, duration: 14, size: 15 },
             { Icon: Star, inset: "-25%", start: 245, duration: 11, size: 12 },
           ].map(({ Icon, inset, start, duration, size }, index) => (
-            <motion.div
+            <div
               key={index}
               aria-hidden="true"
-              className="pointer-events-none absolute z-20"
-              style={{ inset, transformOrigin: "50% 50%" }}
-              initial={false}
-              animate={{ rotate: [start, start + 360] }}
-              transition={{ duration, repeat: Infinity, ease: "linear" }}
+              className="star-orbit pointer-events-none absolute z-20"
+              style={{
+                inset,
+                transformOrigin: "50% 50%",
+                "--orbit-start": `${start}deg`,
+                "--orbit-duration": `${duration}s`,
+              } as CSSProperties}
             >
               <span className="absolute left-1/2 top-0 -translate-x-1/2 text-[var(--timer)] drop-shadow-[0_0_8px_rgba(0,229,255,0.8)]">
                 <Icon size={size} fill={index === 0 ? "rgba(0,229,255,0.16)" : "currentColor"} />
               </span>
-            </motion.div>
+            </div>
           ))}
 
           <div className="absolute inset-0" style={{ perspective: "1000px" }}>

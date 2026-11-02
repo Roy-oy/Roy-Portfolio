@@ -55,6 +55,14 @@ body {
   animation: timer-pulse 1.2s ease-in-out infinite;
 }
 
+@keyframes star-orbit {
+  from { transform: rotate(var(--orbit-start)); }
+  to { transform: rotate(calc(var(--orbit-start) + 360deg)); }
+}
+.star-orbit {
+  animation: star-orbit var(--orbit-duration) linear infinite;
+}
+
 /* Cincin cahaya berputar di sekitar foto */
 @keyframes spin-slow { to { transform: rotate(360deg); } }
 .ring {
