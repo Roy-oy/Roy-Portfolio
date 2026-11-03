@@ -30,7 +30,7 @@ export const projects = [
     title: "Application of CNN Algorithm with MobileNetV4 Architecture for Cataract Classification",
     desc: "Built and evaluated a PyTorch model to classify eye images into normal, immature cataract, and mature cataract categories, then integrated image-based classification into a Flutter application.",
     tech: ["Python", "PyTorch", "MobileNetV4"],
-    image: "/taku.jpg", 
+    image: "/ML.jpg", 
     link: "https://github.com/Roy-oy/TA", 
   },
   {
@@ -38,7 +38,7 @@ export const projects = [
     title: "Design & Development of the Pusmasib Mobile Application", 
     desc: "Created a patient-facing mobile application with Flutter and Dart, supported by a Laravel administration dashboard and a MySQL-backed REST API.",
     tech: ["Laravel", "MySQL", "Flutter", "Dart"],
-    image: "/pa2.png",
+    image: "/PUSMASIB.png",
     link: "https://github.com/Roy-oy/PA2_Kelompok03",
   },
   {
@@ -46,7 +46,7 @@ export const projects = [
     title: "Design and Development of the Rumah Damai Children's Foundation Information Website", 
     desc: "Designed and developed a responsive information website for Rumah Damai Children's Foundation, with a Laravel backend and MySQL integration.",
     tech: ["Laravel", "MySQL"],
-    image: "/pa1.png",
+    image: "/YPA.png",
     link: "https://github.com/Roy-oy/PA1_KEL1",
   },
 ];

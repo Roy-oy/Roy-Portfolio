@@ -77,7 +77,7 @@ export default function Hero() {
                 Get in touch
               </a>
               <a
-                href="/CV_Roy%20S%20Sigalingging.pdf"
+                href="/CV_Roy Sumurung Sigalingging.pdf"
                 download
                 className="font-display inline-flex items-center gap-2 rounded-md border border-[var(--silver)]/35 px-4 py-3 text-xs font-bold tracking-widest text-[var(--silver)] transition hover:border-[var(--timer)] hover:text-[var(--timer)] sm:px-6"
               >
